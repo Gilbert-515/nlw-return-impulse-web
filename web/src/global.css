@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-[#09090A] text-zinc-100;
+}
+
+.card-widgetForm {
+  @apply bg-zinc-800 rounded-lg py-5 w-24 flex-1 flex flex-col items-center gap-2;
+  @apply border-2 border-transparent hover:border-brand-500 focus:border-brand-500 focus:outline-none;
+}
+
+.textarea-widgetForm {
+  @apply min-w-[384px] w-full min-h-[112px] text-sm placeholder-zinc-400 text-zinc-100 focus:outline-none;
+  @apply border-zinc-600 bg-transparent rounded-md focus:border-brand-500 focus:ring-brand-500 focus:ring-1 resize-none;
+  @apply scrollbar-thumb-zinc-700 scrollbar-track-transparent scrollbar-thin;
+}
+
+.btn-submit-widgetForm {
+  @apply p-2 bg-brand-500 rounded-md border-transparent flex flex-1 justify-center items-center text-sm hover:bg-brand-300;
+  @apply focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-zinc-900 focus:ring-brand-500 transition-colors;
+  @apply disabled:opacity-50 disabled:hover:bg-brand-500; 
+}
+
+.btn-screenshot-widgetForm {
+  @apply p-2 bg-zinc-800 rounded-md border-transparent hover:bg-zinc-700 transition-colors text-zinc-100;
+  @apply focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-zinc-900 focus:ring-brand-500 transition-colors;
+}
+
+.btn-screenshot-with-screenshot {
+  @apply p-1 w-10 h-10 rounded-md border-transparent flex justify-end items-end text-zinc-400 hover:text-zinc-100 transition-colors;
+}
