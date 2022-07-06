@@ -3,12 +3,12 @@ generator client {
 }
 
 datasource db {
-  provider = "sqlite"
-  url      = "file:./dev.db"
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
 }
 
 model Feedback {
-  id String  @id @default(uuid())
+  id String  @id @default(uuid()) @map("_id")
 
   type       String
   comment    String

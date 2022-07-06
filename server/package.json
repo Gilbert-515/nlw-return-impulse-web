@@ -19,7 +19,9 @@
   },
   "scripts": {
     "dev": "ts-node-dev src/server.ts",
-    "test": "jest"
+    "test": "jest",
+    "build": "yarn tsc",
+    "start": "node dist/server.js"
   },
   "dependencies": {
     "@prisma/client": "^4.0.0",
