@@ -20,7 +20,7 @@
   "scripts": {
     "dev": "ts-node-dev src/server.ts",
     "test": "jest",
-    "build": "yarn tsc",
+    "build": "tsc",
     "start": "node dist/server.js"
   },
   "dependencies": {
